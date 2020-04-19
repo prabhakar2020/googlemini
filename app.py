@@ -43,8 +43,7 @@ def webhook():
             'fulfillmentText': speech
         }
         
-        
-        res = json.dumps(response, intent = 4)
+        res = json.dumps(response, indent = 4)
         r = make_response(res)
         r.headers["Content-Type"] = "application/json"
         return r
