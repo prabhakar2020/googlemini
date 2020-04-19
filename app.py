@@ -37,6 +37,7 @@ def webhook():
         print (queryResult)
         parameters = queryResult.get('parameters','')
         speech = 'Hey '+str(name)+", glad to meet you"
+        print (speech)
 
         response = {
             'fulfillmentText': speech
