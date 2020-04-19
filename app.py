@@ -33,6 +33,8 @@ def webhook():
     if request.method == 'POST':
         req = request.get_json(silent = True, force = True)
         queryResult = req.get('queryResult')
+        print ("+"*100)
+        print (queryResult)
         parameters = queryResult.get('parameters','')
         speech = 'Hey '+str(name)+", glad to meet you"
 
